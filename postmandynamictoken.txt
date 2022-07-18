@@ -1,0 +1,8 @@
+-GO TO The Tests 
+
+const jsonData = pm.response.json()
+pm.globals.set("access_token", jsonData.token)
+
+And Go TO Authorization 
+
+-Select Bearer set {{access_token}}
